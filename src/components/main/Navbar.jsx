@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom';
 import {
     Collapse,
     initTE,
@@ -14,14 +15,14 @@ function Navbar() {
   {/* TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com */}
   {/* Main navigation container */}
   <nav
-    className="z-20 flex w-full fixed top-0  flex-nowrap items-center justify-between bg-[#FBFBFB] py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:flex-wrap lg:justify-start lg:py-4"
+    className="z-20 flex w-full fixed top-0  flex-nowrap items-center justify-between bg-black text-white py-2  dark:bg-neutral-600 lg:flex-wrap lg:justify-start lg:py-4"
     data-te-navbar-ref=""
   >
     <div className="flex w-full flex-wrap items-center justify-between px-3">
       <div className="ml-2">
-        <a className="text-xl text-neutral-800 dark:text-neutral-200" href="#">
-          Navbar
-        </a>
+        <Link className="text-xl text-white dark:text-neutral-200" href="#">
+          Bike.com
+        </Link>
       </div>
       {/* Hamburger button for mobile view */}
       <button
@@ -65,49 +66,13 @@ function Navbar() {
             className="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1"
             data-te-nav-item-ref=""
           >
-            <a
-              className="active disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-              aria-current="page"
-              href="#"
+            <Link
+              className="p-0 text-white  transition duration-200 hover:text-gray hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+              to="/"
               data-te-nav-link-ref=""
             >
-              Home
-            </a>
-          </li>
-          {/* Features link */}
-          <li
-            className="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1"
-            data-te-nav-item-ref=""
-          >
-            <a
-              className="p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-              href="#"
-              data-te-nav-link-ref=""
-            >
-              Features
-            </a>
-          </li>
-          {/* Pricing link */}
-          <li
-            className="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1"
-            data-te-nav-item-ref=""
-          >
-            <a
-              className="p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-              href="#"
-              data-te-nav-link-ref=""
-            >
-              Pricing
-            </a>
-          </li>
-          {/* Disabled link */}
-          <li
-            className="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1"
-            data-te-nav-link-ref=""
-          >
-            <a className="text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400">
-              Disabled
-            </a>
+              Products
+            </Link>
           </li>
         </ul>
       </div>
