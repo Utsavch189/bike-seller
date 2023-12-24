@@ -4,7 +4,7 @@ import {
   Carousel,
   initTE,
 } from "tw-elements";
-import MyCarousel from '../components/main/MyCarousel';
+import BikeCarousel from '../components/main/BikeCarousel';
 
 function SpeceficProduct() {
   useEffect(() => {
@@ -16,7 +16,7 @@ function SpeceficProduct() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="p-4 flex flex-col md:flex-row -mx-4">
           <div className="md:flex-1 mb-4 md:mb-0">
-            <MyCarousel />
+            <BikeCarousel />
             {/* <div className="h-[460px]">
               <img
                 className="w-full h-full object-cover outline outline-1 outline-slate-400"
