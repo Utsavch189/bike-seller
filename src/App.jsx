@@ -9,8 +9,8 @@ function App() {
   return (
     <>
       {/* <Navbar /> */}
-      <AdminLogin />
-      {/* <AddBike /> */}
+      {/* <AdminLogin /> */}
+      <AddBike />
       {/* <Outlet />
       <Footer /> */}
     </>

@@ -3,8 +3,10 @@ import React from 'react';
 function AdminLogin() {
   return (
     <div className="h-[100vh] flex items-center bg-gradient-to-r from-purple-400 to-indigo-600">
-      <div className="mx-6 xs:mx-16 sm:mx-32 md:mx-48 xl:mx-56 2xl:mx-96 lg:flex w-full rounded-md bg-white">
-        <div className="hidden md:block md:w-[50%] md:bg-[url(https://images.unsplash.com/photo-1590506995460-d0d9892b54da?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] md:bg-cover md:bg-no-repeat md:rounded-l-md"></div>
+      <div className="mx-6 xs:mx-16 sm:mx-32 md:mx-48 xl:mx-60 2xl:mx-[28rem] lg:flex w-full rounded bg-white">
+        <div className="hidden lg:p-4 lg:block lg:w-[50%]">
+          <div className="h-full lg:bg-[url(https://images.unsplash.com/photo-1590506995460-d0d9892b54da?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] lg:bg-cover lg:bg-no-repeat lg:rounded"></div>
+        </div>
         <div className="lg:w-[50%] flex flex-col gap-6 rounded-md bg-white">
           <div className="pt-6 flex justify-center">
             <div style={{ clipPath: "circle(50% at 50% 50%)" }} className="flex justify-center items-center w-32 h-32 md:w-44 md:h-44 bg-blue-800">
