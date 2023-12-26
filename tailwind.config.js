@@ -1,4 +1,3 @@
-// TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -10,18 +9,18 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        xs: '480px',
+        xs: '360px',
         sm: '640px',
         md: '768px',
         lg: '1024px',
         xl: '1280px',
         '2xl': '1536px',
+        '3xl': '1760px',
       },
     },
   },
-  darkMode: "class",
   plugins: [
     require("tw-elements/dist/plugin.cjs"),
-    require('flowbite/plugin')
+    // require('flowbite/plugin')
   ],
 };
