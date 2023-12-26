@@ -8,7 +8,7 @@ import {
 } from "tw-elements";
 
 function Navbar() {
-  const [isLogin, setIsLogin] = useState(false);
+  const [isLogin, setIsLogin] = useState(true);
 
   useEffect(() => {
     initTE({ Collapse });
@@ -29,7 +29,7 @@ function Navbar() {
             isLogin ?
               <div className="mr-2 flex space-x-4">
                 <div className="flex justify-center items-center">
-                  <button className="px-3 py-1 flex items-center space-x-2 rounded-full shadow-md bg-white">
+                  <button className="px-3 py-1 flex items-center space-x-2 rounded-full shadow-sm shadow-green-900 bg-white">
                     <div className="">
                       <i className="fa-solid fa-plus text-2xl font-bold text-green-950"></i>
                     </div>
