@@ -96,8 +96,8 @@ function AddBike() {
 	}, []);
 
 	return (
-		<div className="px-4 md:px-6 lg:px-20 py-10 bg-slate-400">
-			<div className="mx-auto max-w-2xl pt-2 pb-6 px-2 xs:px-4 sm:px-6 lg:max-w-7xl lg:px-8 rounded bg-white">
+		<div className="px-4 md:px-6 lg:px-20 py-10 bg-slate-200">
+			<div className="mx-auto max-w-2xl pt-2 pb-6 px-2 xs:px-4 sm:px-6 lg:max-w-7xl lg:px-8 rounded-md shadow-md shadow-slate-400 bg-white">
 				<h1 className="py-4 font-bold text-center text-4xl [text-shadow:_1px_2px_0_rgb(0_0_0_/_40%)]">Post Your Bike</h1>
 				<form onSubmit={addNewBike} className="py-4 sm:px-4 md:px-10 lg:px-20 space-y-6">
 					<div className="relative font-roboto" data-te-input-wrapper-init>

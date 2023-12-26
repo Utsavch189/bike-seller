@@ -1,55 +1,27 @@
-import React, { useEffect } from 'react';
-
-import {
-  Carousel,
-  initTE,
-} from "tw-elements";
+import React from 'react';
 import BikeCarousel from '../components/main/BikeCarousel';
 
 function SpeceficProduct() {
-  useEffect(() => {
-    initTE({ Carousel });
-  }, []);
-
   return (
     <div className="">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="p-4 flex flex-col md:flex-row -mx-4">
           <div className="md:flex-1 mb-4 md:mb-0">
             <BikeCarousel />
-            {/* <div className="h-[460px]">
-              <img
-                className="w-full h-full object-cover outline outline-1 outline-slate-400"
-                src="https://images.unsplash.com/photo-1561811565-6ed172b54cbe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGhvbmRhfGVufDB8fDB8fHww"
-                alt="Product Image"
-              />
-            </div> */}
-            {/* <div className="flex -mx-2 mb-4">
-              <div className="w-1/2 px-2">
-                <button className="w-full bg-gray-900 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700">
-                  Add to Cart
-                </button>
-              </div>
-              <div className="w-1/2 px-2">
-                <button className="w-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white py-2 px-4 rounded-full font-bold hover:bg-gray-300 dark:hover:bg-gray-600">
-                  Add to Wishlist
-                </button>
-              </div>
-            </div> */}
           </div>
           <div className="md:mx-2 md:flex-1">
             <div className="p-2 rounded outline outline-1 outline-slate-300">
-              <h2 className="text-3xl font-bold text-green-950 dark:text-white mb-2">₹ 54,000</h2>
+              <h2 className="text-3xl font-bold text-green-950 mb-2">₹ 54,000</h2>
               <p className="text-gray-600">2017 - 25,000 km</p>
               <p className="text-gray-600">Excellent condition avenger 220 bike</p>
               <div className="flex flex-wrap">
                 <div className="mr-4">
-                  <span className="mr-1 font-bold text-gray-700 dark:text-gray-300">Brand:</span>
-                  <span className="text-gray-600 dark:text-gray-300">Bajaj</span>
+                  <span className="mr-1 font-bold text-gray-700">Brand:</span>
+                  <span className="text-gray-600">Bajaj</span>
                 </div>
                 <div>
-                  <span className="mr-1 font-bold text-gray-700 dark:text-gray-300">Model:</span>
-                  <span className="text-gray-600 dark:text-gray-300">Avenger</span>
+                  <span className="mr-1 font-bold text-gray-700">Model:</span>
+                  <span className="text-gray-600">Avenger</span>
                 </div>
               </div>
             </div>
@@ -71,7 +43,7 @@ function SpeceficProduct() {
               <hr className="mb-4" />
               <div>
                 <span className="text-xl font-bold text-gray-700">Product Description:</span>
-                <p className="text-gray-600 dark:text-gray-300">
+                <p className="text-gray-600">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, fugit ut dolore voluptatibus sint reiciendis tempore earum accusantium quae autem minima quod, laborum rerum libero dignissimos voluptatum non commodi nemo.
                 </p>
               </div>
