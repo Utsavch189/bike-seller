@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import bikeLogo from "../../assets/bike.png"
-import adminLogo from "../../assets/admin.png"
+import bikeLogo from "../../assets/bike.png";
+import adminLogo from "../../assets/admin.png";
 import {
   Collapse,
   initTE,
 } from "tw-elements";
 
 function Navbar() {
-  const [isLogin, setIsLogin] = useState(true);
+  const [isLogin, setIsLogin] = useState(false);
 
   useEffect(() => {
     initTE({ Collapse });

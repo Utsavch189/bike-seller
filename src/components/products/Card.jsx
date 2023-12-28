@@ -16,6 +16,14 @@ function Card({ product }) {
           <div className="">3 DAYS AGO</div>
         </div>
       </div>
+      <div className="p-2 flex justify-between items-center">
+        <button onClick={(e) => { e.preventDefault(); alert("Update is detouched") }} className="px-3 py-2 rounded-sm outline outline-1 outline-slate-300 bg-gray-100">
+          <i className="fa-solid fa-pen text-2xl text-blue-600"></i>
+        </button>
+        <button onClick={(e) => { e.preventDefault(); alert("Delete is detouched") }} className="px-3 py-2 rounded-sm outline outline-1 outline-slate-300 bg-gray-100">
+          <i className="fa-solid fa-trash text-2xl text-red-600"></i>
+        </button>
+      </div>
     </Link>
   )
 }
