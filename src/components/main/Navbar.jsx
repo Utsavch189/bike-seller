@@ -23,8 +23,8 @@ function Navbar() {
           <div className="absolute -top-5">
             <img className="w-8" src={bikeLogo} alt="" />
           </div>
-          <Link className="text-2xl font-semibold text-white">Bike.com</Link>
-          <Link to={"/"} className="ml-4 text-white">Products</Link>
+          <Link to={'/'} className="text-2xl font-semibold text-white">Bike.com</Link>
+          <Link to={'/'} className="ml-4 text-white">Products</Link>
         </div>
         <div className="">
           {
@@ -45,12 +45,12 @@ function Navbar() {
                   <span onClick={logout} className="cursor-pointer font-[Roboto] font-semibold text-center text-[0.7rem] text-green-950">Logout</span>
                 </div>
               </div> :
-              <div className="relative mr-2 pt-2 flex flex-col items-center cursor-pointer">
+              <Link to={"/admin-login"} className="relative mr-2 pt-2 flex flex-col items-center cursor-pointer">
                 <div className="rounded-full overflow-hidden bg-white">
                   <img className="w-12" src={adminLogo} alt="Admin Logo" />
                 </div>
                 <span className="font-[Roboto] font-semibold text-center text-[0.7rem] text-green-950">Admin Login</span>
-              </div>
+              </Link>
           }
         </div>
       </div>

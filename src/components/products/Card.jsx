@@ -34,18 +34,14 @@ function Card({ product }) {
   }
 
   return (
-    <Link to={`/specefic/${product.id}`} className="group p-2 rounded outline outline-1 outline-slate-400">
-      <div className="h-72 mb-4">
+    <Link to={`/bike?bike_model_id=${product?.bike_model_id}&bike_model=${product?.bike_model}&brand_name=${product?.brand_name}&bike_name=${product?.bike_name}`} className="group p-2 rounded outline outline-1 outline-slate-400">
+      <div className="h-52 mb-4">
         <img src={`https://api.utsavchatterjee.me${product?.image_path}`} alt="" className="h-full w-full object-cover object-center duration-100 group-hover:opacity-75" />
       </div>
       <div className="px-2">
-        <h3 className="mb-[-4px] text-xl font-bold text-green-950">₹ {formattedPrice(product?.bike_meta[0]?.asking_price)}</h3>
-        <h5 className="text-sm text-green-950">{product?.bike_meta[0]?.buy_year} - {product?.bike_meta[0]?.kms_run} km</h5>
+        <h3 className="text-xl font-bold text-green-950">₹ {formattedPrice(product?.bike_meta[0]?.asking_price)}</h3>
+        <h5 className="text-sm text-green-950">{product?.bike_meta[0]?.buy_year} - {formattedPrice(product?.bike_meta[0]?.kms_run)} km</h5>
         <div className="text-sm text-slate-600">{product?.bike_meta[0]?.details}</div>
-        <div className="flex justify-between text-xs text-slate-600">
-          <div className="">Newtown, Kolkata</div>
-          <div className="">3 DAYS AGO</div>
-        </div>
       </div>
       <div className="p-2 flex justify-between items-center">
         <button onClick={(e) => { e.preventDefault(); alert("Update is detouched") }} className="px-3 py-2 rounded-sm outline outline-1 outline-slate-300 bg-gray-100">

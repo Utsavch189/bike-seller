@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { unauthorizedAxios } from '../axios/axios';
+import Footer from '../components/main/Footer';
+import Navbar from '../components/main/Navbar';
 import Card from '../components/products/Card';
 import Search from '../components/products/Search';
 import ProductContext from '../context/ProductContext';
@@ -31,11 +33,12 @@ function Products() {
 
   return (
     <ProductContext.Provider value={contextData}>
+      <Navbar />
+      <div className="mx-auto max-w-2xl py-4 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+        <Search />
+      </div>
       {
         isLoading ? "Loading..." : <>
-          <div className="mx-auto max-w-2xl py-4 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-            <Search />
-          </div>
           <div className="">
             <div className="mx-auto max-w-2xl pt-2 pb-6 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
               <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
@@ -49,6 +52,7 @@ function Products() {
           </div>
         </>
       }
+      <Footer />
     </ProductContext.Provider>
   );
 }
