@@ -1,11 +1,10 @@
-import React, { useContext } from 'react';
-import RootContext from '../context/RootContext';
+import React from 'react';
+import Page404 from '../components/Page404/Page404';
 
 const ProtectedRoute = ({ children }) => {
-	const context = useContext(RootContext);
 
-	if (!context.isLogin) {
-		return <div className="text-4xl font-semibold">Not Found 404</div>
+	if (!localStorage.getItem("token")) {
+		return <Page404 />
 	}
 
 	return children;

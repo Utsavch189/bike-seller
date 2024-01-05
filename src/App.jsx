@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
+import Footer from './components/main/Footer';
+import Navbar from './components/main/Navbar';
 import RootContext from './context/RootContext';
 
 function App() {
@@ -23,7 +25,9 @@ function App() {
 
   return (
     <RootContext.Provider value={contextData}>
+      <Navbar />
       <Outlet />
+      <Footer />
     </RootContext.Provider>
   );
 }
