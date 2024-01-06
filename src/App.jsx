@@ -27,11 +27,9 @@ function App() {
   return (
     <RootContext.Provider value={contextData}>
       <div><Toaster /></div>
+
       <Navbar />
-      <div className='min-h-[100vh]'>
-        <Outlet />
-      </div>
-      
+      <div className="min-h-[100vh]"><Outlet /></div>
       <Footer />
     </RootContext.Provider>
   );
