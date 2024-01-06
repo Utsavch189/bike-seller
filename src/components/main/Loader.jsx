@@ -14,8 +14,9 @@ function Loader() {
   return (
     <>
     <Lottie options={defaultOptions}
-              height={400}
-              width={400}/>
+              height={450}
+              width={400}
+              style={{marginTop:"70px"}}/>
       {/*<div className="flex space-x-2 justify-center items-center h-[70vh] bg-white">
         <span className="sr-only">Loading...</span>
         <div className="h-8 w-8 bg-blue-600 rounded-full animate-bounce [animation-delay:-0.3s]"></div>
