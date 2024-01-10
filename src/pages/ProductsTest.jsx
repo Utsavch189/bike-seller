@@ -104,7 +104,7 @@ function ProductsTest() {
         pageLinkClassName="px-3"
         nextClassName="px-3 py-3 rounded-r-full bg-[#51bae8]"
         previousClassName="px-3 py-3 rounded-l-full bg-[#51bae8]"
-        className="flex justify-center mt-8"
+        className="flex justify-center my-6"
         breakLabel="..."
         nextLabel={<i className="fa-solid fa-angle-right text-lg text-[#2184c3]"></i>}
         onPageChange={handlePageClick}
