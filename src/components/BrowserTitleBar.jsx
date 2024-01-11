@@ -5,7 +5,7 @@ const BrowserTitleBar = ({ title }) => {
   return (
     <>
       <Helmet>
-        <title>Bike.com | {title}</title>
+        <title>S.AUTO SERVICE | {title}</title>
       </Helmet>
     </>
   )
