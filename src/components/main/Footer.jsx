@@ -50,7 +50,7 @@ function Footer() {
             </svg>
           </a> */}
         </div>
-        <p className="text-sm">© 2024 Bike.com | All Rights Reserved</p>
+        <p className="text-sm">© 2024 S.Auto Service | All Rights Reserved</p>
       </div>
     </footer>
   )
